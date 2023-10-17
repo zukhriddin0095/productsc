@@ -21,7 +21,7 @@ const ProductPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [data, setData] = useState([]);
   const [selected, setSelected] = useState<string | null>(null);
-  const [searchText, setsearchText] = useState("");
+  // const [searchText, setsearchText] = useState("");
   const [form] = Form.useForm();
 
   useEffect(() => {
@@ -96,13 +96,13 @@ const ProductPage = () => {
       <div style={{ paddingBottom: "10px" }}>
         <Flex justify="space-evenly" align="center">
           <h1>Total Porducts: ({data.length})</h1>
-          <Input
-            onChange={(e) => setsearchText(e.target.value)}
+          {/* <Input
+            // onChange={(e) => setsearchText(e.target.value)}
             style={{
               width: "50%",
             }}
             placeholder=" search Categories"
-          />
+          /> */}
           <Button onClick={showModal} className="primary">
             Add
           </Button>
