@@ -4,11 +4,10 @@ import { useNavigate } from "react-router-dom";
 
 import "./login.scss";
 import { LoginType } from "../../types/loginType";
+import { AuthContext } from "../../context/AuthContex";
 import { LoginResponseType } from "../../types/loginResponse";
 import { TOKEN } from "../../constants";
 import { useContext, useState } from "react";
-import { AuthContext } from "../../context/AuthContex";
-import { AuthContextType } from "../../types/auth-context";
 
 
 const LoginPage = () => {

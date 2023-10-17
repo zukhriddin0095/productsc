@@ -9,10 +9,11 @@ import { TOKEN } from "../../constants";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthContex";
+import { AuthContextType } from "../../types/auth-context";
 
 const { Content, Footer, Sider } = Layout;
 const FrontLayout = () => {
-  const {setIsAuthenticated} = useContext(AuthContext)
+  const {setIsAuthenticated}: AuthContextType = useContext(AuthContext)
   const location = useLocation();
   const navigate = useNavigate();
 

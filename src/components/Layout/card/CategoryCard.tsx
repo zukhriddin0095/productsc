@@ -18,7 +18,7 @@ function CategoryCard({
   const { Meta } = Card;
   const navigate = useNavigate();
 
-  const product = (id: CategoryType) => {
+  const product = (id: string)  => {
     navigate(`/products/${id}`);
   };
   return (
